@@ -1,4 +1,10 @@
-@Import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
 body{
-  background-color: blue;
+  
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1300px;
+  height: 1200px;
   }
