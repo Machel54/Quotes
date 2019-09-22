@@ -2,17 +2,22 @@
 
 body{
   background-image: url('https://images.pexels.com/photos/2769274/pexels-photo-2769274.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
-  color: white;
+  color: whitesmoke;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: relative;
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
 }
 h1{
  color: white;
 }
 .jumbotron{
   background: none;
+  width: 400px;
+padding: 20px;
+margin-bottom: 30px;
 }
 .quote-overlay{
   background-color: rgba(0, 0, 0, 0.9);
