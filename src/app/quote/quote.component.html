@@ -1,10 +1,17 @@
-<div>
+<div class="container">
   <h1>Quotes</h1>
   <hr>
-  <ul>
-    <div *ngFor='let quote of quotes;let i = index'>
-      <li>{{ quote.name }} due on {{quote.completeDate|date}}</li>
+  <div class="row">
+    <div class="col-md-6">
+     <div *ngFor='let quote of quotes;let i = index'class="jumbotron jumbotron-fluid">
+      <li>{{ quote.name }}</li>
       <button (click)='toggleDetails(i)' class="btn btn-danger">Show Author</button>
       <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
       </div>
-    </ul>    
+      <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+     </div>
+  </div>
+</div>
+  
