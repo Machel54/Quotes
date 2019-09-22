@@ -16,8 +16,13 @@ export class QuoteComponent implements OnInit {
     new Quote(5,'Pablo Picasso','The purpose of art is washing the dust of daily life off our souls.'),
   ];
 
-  toogleDetails(index){
+  toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  completeQuote(isComplete, index){
+    if (isComplete){
+      this.quotes.splice(index,1);
+    }
   }
   
   constructor() { }
