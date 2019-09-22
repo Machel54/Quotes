@@ -2,9 +2,9 @@
 
 body{
   
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1300px;
-  height: 1200px;
-  }
+}
+h1{
+  background-color: blue;
+}
+
+
