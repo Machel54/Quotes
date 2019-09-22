@@ -1,14 +1,26 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
+  background-image: url('https://images.pexels.com/photos/2769274/pexels-photo-2769274.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
   color: white;
-  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
 }
 h1{
- color: red;
+ color: white;
 }
 .jumbotron{
   background: none;
 }
+.quote-overlay{
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+}
+
 
 

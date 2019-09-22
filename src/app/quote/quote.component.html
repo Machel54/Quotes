@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container-fluid quote">
+<div class="quote-overlay">
   <h1>Quotes</h1>
   <hr>
   <div class="row">
@@ -8,10 +9,12 @@
       <button (click)='toggleDetails(i)' class="btn btn-danger">Show Author</button>
       <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
       </div>
+    </div>
       <div class="col-md-6">
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>
      </div>
   </div>
 </div>
+
   

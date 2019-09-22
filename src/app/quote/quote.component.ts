@@ -9,11 +9,11 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
    
   quotes: Quote[] = [
-    new Quote(1,'William Shakespeare','To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.',new Date(2020,3,14)),
-    new Quote(2,'Machel Raini','Roses are red, violets are blue, vodka costs less than dinner for two.',new Date(2019,6,9)),
-    new Quote(3,'Florence Nightingale','Women have no sympathy and my experience of women is almost as large as Europe',new Date(2022,1,12)),
-    new Quote(4,'Mahatma Gandhi','I will not let anyone walk through my mind with their dirty feet.',new Date(2019,0,18)),
-    new Quote(5,'Pablo Picasso','The purpose of art is washing the dust of daily life off our souls.',new Date(2019,2,14)),
+    new Quote(1,'William Shakespeare','To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.',new Date(2020,3,14),0,0),
+    new Quote(2,'Machel Raini','Roses are red, violets are blue, vodka costs less than dinner for two.',new Date(2019,6,9),0,0),
+    new Quote(3,'Florence Nightingale','Women have no sympathy and my experience of women is almost as large as Europe',new Date(2022,1,12),0,0),
+    new Quote(4,'Mahatma Gandhi','I will not let anyone walk through my mind with their dirty feet.',new Date(2019,0,18),0,0),
+    new Quote(5,'Pablo Picasso','The purpose of art is washing the dust of daily life off our souls.',new Date(2019,2,14),0,0),
   ];
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
