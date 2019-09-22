@@ -9,12 +9,17 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
    
   quotes: Quote[] = [
-    {id:1, description:'William Shakespeare',name:'To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.'},
-    {id:2,description:'Machel Raini',name:'Roses are red, violets are blue, vodka costs less than dinner for two.'},
-    {id:3,description:'Florence Nightingale',name:'Women have no sympathy and my experience of women is almost as large as Europe'},
-    {id:4,description:'Mahatma Gandhi',name:'I will not let anyone walk through my mind with their dirty feet.'},
-    {id:5,description:'Pablo Picasso',name:'The purpose of art is washing the dust of daily life off our souls.'},
+    new Quote(1,'William Shakespeare','To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.'),
+    new Quote(2,'Machel Raini','Roses are red, violets are blue, vodka costs less than dinner for two.'),
+    new Quote(3,'Florence Nightingale','Women have no sympathy and my experience of women is almost as large as Europe'),
+    new Quote(4,'Mahatma Gandhi','I will not let anyone walk through my mind with their dirty feet.'),
+    new Quote(5,'Pablo Picasso','The purpose of art is washing the dust of daily life off our souls.'),
   ];
+
+  toogleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  
   constructor() { }
 
   ngOnInit() {
